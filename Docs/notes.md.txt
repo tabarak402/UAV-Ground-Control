@@ -1,0 +1,8 @@
+# UAV System Notes
+
+- Python reads MAVLink data from COM port
+- Data is sent via UDP (127.0.0.1:14550)
+- C# application receives JSON packets
+- UI updates in real-time (map, HUD, 3D, video)
+
+Main bottleneck: video stream latency depends on RTSP buffer.
